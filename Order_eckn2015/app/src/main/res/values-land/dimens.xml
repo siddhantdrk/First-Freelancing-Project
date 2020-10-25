@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="PrimaryTextSize">12sp</dimen>
+    <dimen name="SecondaryTextSize">10sp</dimen>
+    <dimen name="first_txt_margin_top">16dp</dimen>
+    <dimen name="txt1_margin_top">4dp</dimen>
+    <dimen name="resend_btn_dimen">4dp</dimen>
+    <dimen name="Edt_margin_top">-8dp</dimen>
+    <dimen name="Logout_btn_text_size">12sp</dimen>
+    <dimen name="otp_Tv_txt_top_margin">8dp</dimen>
+    <dimen name="mail_icon_height">104dp</dimen>
+    <dimen name="mail_icon_width">104dp</dimen>
+    <dimen name="After_otp_confirm_top">8dp</dimen>
+    <dimen name="After_otp_Edt_margin_top">0dp</dimen>
+    <dimen name="Logout_btn_bottom_margin">8dp</dimen>
+</resources>

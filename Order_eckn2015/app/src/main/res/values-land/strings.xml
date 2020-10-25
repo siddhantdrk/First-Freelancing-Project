@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Order_eckn2015</string>
+    <string name="todo">TODO</string>
+    <string name="la_tua_tua_e_mail">La tua tua E-Mail:</string>
+    <string name="il_tuo_telefono">Il tuo telefono:</string>
+    <string name="confirm">Confirm</string>
+    <string name="resend_sms">Resend SMS?</string>
+    <string name="star">*</string>
+    <string name="logout">Logout</string>
+    <string name="la_registrazione_grazie">la registrazione. Grazie</string>
+    <string name="grazie_per_aver_scelto_elena_nprima_di_poter_procedere_ndevi_confermare_la_tua_e_mail">Grazie per aver scelto ELENA Prima di poter procedere devi confermare la tua E-Mail</string>
+    <string name="per_farover_guarda_anche_nella_cartello_dello_spam_se_la_mail_non_arriva_contattaci_saremo_felici_di_aiutari">per farover guarda anche nella cartello dello SPAM.Se la Mail non arriva contattaci,saremo felici di aiutari</string>
+</resources>

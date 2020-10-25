@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorGray"
+    tools:context=".OtpActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header_logo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/la_tua_tua_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/la_tua_tua_e_mail"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/PrimaryTextSize"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/first_txt_margin_top"/>
+
+
+
+            <EditText
+                android:id="@+id/email_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/PrimaryTextSize"
+                android:backgroundTint="@color/PrimaryOrange"
+                android:layout_marginTop="@dimen/Edt_margin_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:minWidth="@dimen/Edt_min_width"
+                android:layout_below="@id/la_tua_tua_txt"/>
+
+            <TextView
+                android:id="@+id/Il_tou_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_edt"
+                android:text="@string/il_tuo_telefono"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/PrimaryTextSize"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/txt1_margin_top"/>
+
+            <EditText
+                android:id="@+id/telefono_edt"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/PrimaryTextSize"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/PrimaryOrange"
+                android:layout_marginTop="@dimen/Edt_margin_top"
+                android:inputType="number"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_centerHorizontal="true"
+                android:minWidth="@dimen/Edt_min_width"
+                android:layout_below="@id/Il_tou_txt"/>
+
+            <TextView
+                android:id="@+id/txt_above_Otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/telefono_edt"
+                android:text="Text Above OTP"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/PrimaryTextSize"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/txt1_margin_top"/>
+
+            <LinearLayout
+                android:id="@+id/Otp_input_block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txt_above_Otp"
+                android:layout_marginTop="@dimen/Edt_margin_top"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/otpET1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:backgroundTint="@color/PrimaryOrange"
+                    android:textSize="@dimen/PrimaryTextSize"/>
+
+                <EditText
+                    android:id="@+id/otpET2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:backgroundTint="@color/PrimaryOrange"
+                    android:textSize="@dimen/PrimaryTextSize"/>
+                <EditText
+                    android:id="@+id/otpET3"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:backgroundTint="@color/PrimaryOrange"
+                    android:textSize="@dimen/PrimaryTextSize"/>
+
+                <EditText
+                    android:id="@+id/otpET4"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:backgroundTint="@color/PrimaryOrange"
+                    android:textSize="@dimen/PrimaryTextSize"/>
+                <EditText
+                    android:id="@+id/otpET5"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:backgroundTint="@color/PrimaryOrange"
+                    android:textSize="@dimen/PrimaryTextSize"/>
+                <EditText
+                    android:id="@+id/otpET6"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:backgroundTint="@color/PrimaryOrange"
+                    android:textSize="@dimen/PrimaryTextSize"/>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Otp_input_block"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:backgroundTint="@color/PrimaryOrange"
+                app:backgroundTint="@color/PrimaryOrange"
+                android:text="@string/confirm"
+                app:cornerRadius="12dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/PrimaryTextSize"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="@dimen/txt1_margin_top"/>
+
+            <Button
+                android:id="@+id/resend_sms_btn"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="30dp"
+                android:layout_below="@id/confirm_btn"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:text="@string/resend_sms"
+                android:textColor="@color/PrimaryOrange"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/PrimaryTextSize"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/resend_btn_dimen"/>
+
+
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="@dimen/txt1_margin_top"
+                android:layout_above="@id/la_registr_txt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/star"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/PrimaryOrange"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/SecondaryTextSize"
+                android:text="se I'E-Mail o il numero sono sbagliati fai il logout e rifai"
+                android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/la_registr_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/logout_btn"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="@dimen/SecondaryTextSize"
+                android:text="@string/la_registrazione_grazie"
+                android:layout_marginStart="16dp"/>
+
+                <Button
+                    android:id="@+id/logout_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/logout"
+                    android:layout_marginRight="16dp"
+                    android:textSize="@dimen/Logout_btn_text_size"
+                    android:layout_alignParentBottom="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/PrimaryOrange"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/Logout_btn_bottom_margin"
+                    android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
