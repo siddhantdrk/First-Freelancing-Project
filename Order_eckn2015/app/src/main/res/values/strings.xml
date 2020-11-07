@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Order_eckn2015</string>
+    <string name="app_name" translatable="false">Elena</string>
     <string name="todo">TODO</string>
     <string name="la_tua_tua_e_mail">La tua tua E-Mail:</string>
     <string name="il_tuo_telefono">Il tuo telefono:</string>
@@ -12,4 +12,193 @@
     <string name="per_farover_guarda_anche_nella_cartello_dello_spam_se_la_mail_non_arriva_contattaci_saremo_felici_di_aiutari">per farover guarda anche nella cartello dello SPAM. Se la Mail\n\nnon arriva contattaci,saremo felici di aiutari</string>
     <string name="prima_di_poter_procedere">Prima di poter procedere</string>
     <string name="devi_confermare_la_tua_e_mail">devi confermare la tua E-Mail</string>
+
+
+    <!-- MainActivity strings -->
+    <string name="ElenaSupportLabel">Support</string>
+    <string name="ElenaAutoAnswerLabel">Auto-answering</string>
+    <string name="ElenaSettingsLabel">Settings</string>
+    <string name="ElenaNextPage">Next page</string>
+    <string name="ElenaPrevPage">Previous page</string>
+
+    <!-- Settings strings -->
+    <string name="ElenaServiceLabel">SERVICE:</string>
+    <string name="ElenaWhatsappLabel">WhatsApp</string>
+    <string name="ElenaServLabel">Elena</string>
+    <string name="ElenaModeLabel">SETTINGS:</string>
+    <string name="ElenaModeStandardLabel">Hide</string>
+    <string name="ElenaModeExtendedLabel">Show</string>
+    <string name="ElenaSetForegroundLabel">Set after how many minutes Elena must return in foreground</string>
+    <string name="ElenaSetTimeLabel">Insert the time</string>
+    <string name="ElenaContactsLabel">Set Contacts</string>
+    <string name="ElenaVolumeLabel">Volume</string>
+    <string name="ElenaSaveLabel">Save</string>
+    <string name="ElenaAGBLabel">Terms</string>
+    <string name="ElenaPrivacyLabel">Privacy</string>
+    <string name="ElenaShowNameLabel">Show name</string>
+    <string name="ElenaShowNumberLabel">Show number</string>
+    <string name="ElenaProfileLabel">Profile</string>
+
+    <!-- StandardSettingsCheck strings -->
+    <string name="ElenaDialogLabel">Insert here</string>
+    <string name="ElenaDialogCheckLabel">Insert the following text to proceed to the settings: \n 28G4L5</string>
+    <string name="ElenaConfirmLabel">Confirm</string>
+
+    <!-- Contacts strings -->
+    <string name="ElenaNotSetLabel">Not Set</string>
+    <string name="ElenaSetNumberLabel">Set Number</string>
+    <string name="ElenaSetImageLabel">Set Image</string>
+    <string name="ElenaAddTabLabel">Add new tab</string>
+    <string name="ElenaDeleteTab">Do you want to remove this tab?</string>
+    <string name="ElenaTabExists">A tab with this name already exists</string>
+    <string name="ElenaTabLimitReached">Tabs limit reached!</string>
+    <string name="ElenaNewTabLabel">New Category</string>
+    <string name="ElenaCatName">Category name</string>
+    <string name="ElenaTypeName">Please type the category name</string>
+    <string name="ElenaFixNumber">Please check if the format of the number is correct (+Prefix), if not fix it</string>
+
+    <!-- Splash screen strings -->
+    <string name="ElenaBaseLabel" translatable="false">ELENA Free</string>
+    <string name="ElenaProLabel" translatable="false">ELENA Pro</string>
+    <string name="ElenaProPlusLabel" translatable="false">ELENA Pro Plus</string>
+
+    <string name="ElenaBuyProLabel">Buy license</string>
+    <string name="ElenaNotBuyLabel">Continue</string>
+
+
+    <!-- Dialog DataConsuming strings -->
+    <string name="ElenaDataActiveMsg">Mobile data active</string>
+    <string name="ElenaDataConsumingMsg">Video calls are very data-consuming, do you want to proceed?</string>
+
+    <!-- Dialog Pro feature strings -->
+    <string name="ElenaProFunction">You need the Pro License to use this feature!</string>
+    <string name="ElenaProPlusFunction">You need the Pro Plus License to use this feature!</string>
+    <string name="ElenaContinuePro">Continue with pro</string>
+
+    <!-- Dialog goRegister -->
+    <string name="ElenaRetryLabel">Retry</string>
+
+    <!-- Base -->
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="ok" translatable="false">OK</string>
+
+    <!-- Terms strings -->
+    <string name="Elena18Label">I\'m 18+</string>
+
+
+    <!-- LoginActivity strings -->
+    <string name="ElenaEmailLabel" translatable="false">Email</string>
+    <string name="ElenaPasswordLabel">Password</string>
+    <string name="ElenaLoginLabel" translatable="false">Login</string>
+    <string name="ElenaNotHaveAccountLabel">Don\'t have an account?</string>
+    <string name="ElenaForgotPassword">Forgot password?</string>
+    <string name="ElenaResetPassword">Reset password</string>
+    <string name="ElenaEmailUsedLabel">The email address is already in use by another account</string>
+    <string name="ElenaAuthErrorLabel">Authentication failed</string>
+    <string name="ElenaLogoutLabel" translatable="false">Logout</string>
+    <string name="EmailSentLabel">Email successfully sent, please check your inbox</string>
+    <string name="ElenaPWDShortLabel">Password should be at least 6 characters</string>
+    <string name="ElenaRegisterLabel">Register</string>
+    <string name="CountryCode">Country code</string>
+
+
+    <!-- Register activity strings -->
+    <string name="ElenaPlansLabel">Plans</string>
+    <string name="ElenaAgreeLabel">Checking the boxes below, you agree to:</string>
+
+    <string name="ElenaPerMonthLabel">€/Month</string>
+
+    <string name="ElenaFreeName">Free</string>
+    <string name="ElenaFreePrice">It\'s free!</string>
+
+    <string name="ElenaProName">Pro</string>
+    <string name="ElenaProPrice">4.99 €/Month</string>
+
+    <string name="ElenaProPlusName">Pro Plus</string>
+    <string name="ElenaProPlusPrice">19.90 €/Month</string>
+
+    <string name="oops_nsomething_went_wrong">An error occurred</string>
+
+    <string name="ElenaProceed">Proceed</string>
+
+    <!-- Errors string -->
+    <string name="ElenaEmailNotVerified">Email not verified, please confirm your email, %email%, in order to use Elena</string>
+
+    <!-- Website root link, STAGE: https://staging-wwwelenaappde.kinsta.cloud/  LIVE:https://www.elena-app.de/ -->
+    <string name="elena_site">https://www.elena-app.com/</string>
+    <string name="elena_pro">product/elena-app-pro/</string>
+    <string name="elena_pro_plus">product/elena-app-pro-plus</string>
+
+    <string name="elena_api" translatable="false">https://www.elena-app.com/</string>
+    <string name="elena_url_sip" translatable="false">https://t.easydigis.com</string>
+
+    <!-- Linphone strings -->
+    <string name="user_agent" translatable="false">LinphoneAndroid</string>
+    <string name="default_conference_factory_uri" translatable="false">sip:conference-factory@sip.linphone.org</string>
+    <string name="default_domain" translatable="false">sip.linphone.org</string>
+    <string name="default_lime_x3dh_server_url" translatable="false">https://lime.linphone.org/lime-server/lime-server.php</string>
+
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="couldnt_accept_call">An error occurred while accepting the call</string>
+    <string name="error_network_unreachable">Network is unreachable</string>
+
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_call_declined">Call declined</string>
+    <string name="error_user_busy">User busy</string>
+    <string name="error_user_not_found">User not found</string>
+    <string name="error_incompatible_media">Incompatible media parameters</string>
+
+    <string name="notification_call_hangup_label">Hangup</string>
+    <string name="notification_call_answer_label">Answer</string>
+
+    <string name="incall_notif_incoming">Call incoming</string>
+    <string name="incall_notif_outgoing">Call outgoing</string>
+
+    <bool name="enable_call_notification">true</bool>
+    <integer name="notification_ms_on">1000</integer>
+    <integer name="notification_ms_off">7000</integer>
+
+    <string name="notification_service_channel_id" translatable="false">linphone_notification_service_id</string>
+    <string name="notification_channel_id" translatable="false">linphone_notification_id</string>
+
+    <string name="content_title_notification_service">Elena service notification</string>
+    <string name="sync_account_type" translatable="false">org.linphone.sync</string>
+
+    <string name="sync_account_name">elena contacts</string>
+
+    <string name="linphone_address_mime_type" translatable="false">vnd.android.cursor.item/vnd.org.linphone.provider.sip_address</string>
+
+    <string name="rls_uri" translatable="false">sip:rls@sip.linphone.org</string>
+
+    <string name="service_name">Elena Service</string>
+
+    <string name="incall_notif_active">Audio call ongoing</string>
+    <string name="incall_notif_paused">Paused call ongoing</string>
+    <string name="incall_notif_video">Video capturing call ongoing</string>
+
+    <string name="device_power_saver_dialog_message">It seems your device has a power saver. In order for the app to be able to receive calls and messages while in background using push notifications, the app must be whitelisted.</string>
+    <string name="device_power_saver_dialog_title">Power saver detected!</string>
+    <string name="device_power_saver_dialog_button_go_to_settings">Settings</string>
+    <string name="device_power_saver_dialog_button_later">Later</string>
+
+    <string name="pref_grant_read_dnd_settings_permission_desc">We need you to grant use the access to the Do Not Disturb settings to correctly ring or not depending on the current policy</string>
+
+    <string name="incoming_call">incoming call</string>
+    <string name="outgoing_call">outgoing call</string>
+
+    <string name="call_paused_by_remote">Your caller paused the call</string>
+
+    <string name="do_not_ask_again">Do not show again</string>
+
+
+    <!-- OTP -->
+    <string name="resendOTPLabel">Resend SMS?</string>
+    <string name="OtpLabel">Insert the code you received via SMS</string>
+    <string name="userNumberLabel">Telephone number</string>
+    <string name="userNumberHint">Telephone number</string>
+    <string name="devicesActivatedLabel">Active devices: %activated% of %max%</string>
+    <string name="wrongCodeError">Invalid code</string>
+
 </resources>

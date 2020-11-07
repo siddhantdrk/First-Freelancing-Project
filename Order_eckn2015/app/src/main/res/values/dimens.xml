@@ -14,4 +14,32 @@
     <dimen name="mail_icon_width">150dp</dimen>
     <dimen name="Logout_btn_bottom_margin">16dp</dimen>
     <dimen name="After_otp_Edt_margin_top">0dp</dimen>
+    <dimen name="header_logo_dimension">48dp</dimen>
+    <dimen name="header_text_size">16sp</dimen>
+    <dimen name="layout_footer_margin">8dp</dimen>
+    <dimen name="footer_icon_dimension">48dp</dimen>
+    <dimen name="footer_icon_txt_size">14sp</dimen>
+    <dimen name="save_text_size">16sp</dimen>
+    <dimen name="linear_layout_margin_top">24dp</dimen>
+    <dimen name="save_byn_width">112dp</dimen>
+    <dimen name="save_byn_height">48dp</dimen>
+    <dimen name="tab_txt_size">16sp</dimen>
+    <dimen name="contact_item_call_icon_dimension">@dimen/_30sdp</dimen>
+    <dimen name="hodenHofcircularImgDimension">@dimen/_48sdp</dimen>
+    <dimen name="item_home_height">144dp</dimen>
+    <dimen name="tabs_height">36dp</dimen>
+    <dimen name="home_item_txt_size">16sp</dimen>
+    <dimen name="home_item_height">160dp</dimen>
+    <dimen name="contact_item_btn_txt_size">@dimen/_12sdp</dimen>
+    <dimen name="edt_padding">@dimen/_8sdp</dimen>
+    <dimen name="plan_images">@dimen/_60sdp</dimen>
+    <dimen name="plan_images_side_margin">@dimen/_3sdp</dimen>
+    <!--    activity_settings_screen-->
+    <dimen name="padding_top">@dimen/_8sdp</dimen>
+    <dimen name="icon_dimension">@dimen/_20sdp</dimen>
+    <dimen name="heading_text">@dimen/_12ssp</dimen>
+    <dimen name="long_text_size">@dimen/_12ssp</dimen>
+
+    <!--    saveButton-->
+    <dimen name="save_button_text_size">@dimen/_12ssp</dimen>
 </resources>

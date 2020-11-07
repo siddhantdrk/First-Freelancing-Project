@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorGray"
+    tools:context=".ErrorActivity">
+
+    <include
+        android:id="@+id/home_header_layout"
+        layout="@layout/layout_header_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/home_footer_layout"
+        android:layout_below="@+id/home_header_layout"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/errorIMGView"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/showErrorTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/errorIMGView"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center_horizontal"
+                android:text="@string/oops_nsomething_went_wrong"
+                android:textSize="@dimen/_12ssp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/retryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/PrimaryOrange"
+                    android:gravity="center"
+                    android:text="@string/ElenaRetryLabel"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_10ssp"
+                    app:cornerRadius="@dimen/_4sdp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/logoutError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:backgroundTint="@color/PrimaryOrange"
+                    android:gravity="center"
+                    android:text="@string/ElenaLogoutLabel"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_10ssp"
+                    app:cornerRadius="@dimen/_4sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/home_footer_layout"
+        layout="@layout/layout_footer_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

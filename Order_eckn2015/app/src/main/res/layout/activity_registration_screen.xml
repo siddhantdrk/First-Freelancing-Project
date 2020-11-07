@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorGray"
+    tools:ignore="DuplicateIds">
+
+    <include
+        android:id="@+id/home_header_layout"
+        layout="@layout/layout_header_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_header_layout"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/userNameTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ElenaEmailLabel"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/userNameET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="@dimen/_1sdp"
+                            android:background="@drawable/tab_border_drawable"
+                            android:hint="@string/ElenaEmailLabel"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:padding="@dimen/edt_padding"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/userNumberTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/userNumberLabel"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/countryCodeSpinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:entries="@array/countryCodes"
+                                android:gravity="center"
+                                android:prompt="@string/CountryCode"
+                                android:theme="@style/SpinnerText" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/userNumberET"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:background="@drawable/tab_border_drawable"
+                                android:hint="@string/userNumberHint"
+                                android:inputType="phone"
+                                android:maxLines="1"
+                                android:padding="@dimen/edt_padding"
+                                android:textSize="@dimen/_10ssp" />
+
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/userPassTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:text="@string/ElenaPasswordLabel"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/userPassET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/tab_border_drawable"
+                            android:hint="@string/ElenaPasswordLabel"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:padding="@dimen/edt_padding"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/numberDevicesActiveTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/devicesActivatedLabel"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10ssp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/plansTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="@string/ElenaPlansLabel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_2sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tabOneID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/plan_images_side_margin"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="3dp"
+                            app:contentPadding="@dimen/_2sdp">
+
+                            <LinearLayout
+                                android:id="@+id/rlimg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/itemHomeIV"
+                                    android:layout_width="@dimen/plan_images"
+                                    android:layout_height="@dimen/plan_images"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="#ffffff"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/icon_free" />
+
+                                <TextView
+                                    android:id="@+id/planFreeTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:text="@string/ElenaFreeName"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <TextView
+                                    android:id="@+id/priceFreeTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:text="@string/ElenaFreePrice"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tabTwoID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/plan_images_side_margin"
+                            android:layout_marginRight="@dimen/plan_images_side_margin"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="3dp"
+                            app:contentPadding="@dimen/_2sdp">
+
+                            <LinearLayout
+                                android:id="@+id/rlimg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/itemHomeIV"
+                                    android:layout_width="@dimen/plan_images"
+                                    android:layout_height="@dimen/plan_images"
+                                    android:background="#ffffff"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/icon_pro" />
+
+                                <TextView
+                                    android:id="@+id/planProTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:text="@string/ElenaProName"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <TextView
+                                    android:id="@+id/priceProTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:text="@string/ElenaProPrice"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tabThreeID"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/plan_images_side_margin"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="3dp"
+                            app:contentPadding="@dimen/_2sdp">
+
+                            <LinearLayout
+                                android:id="@+id/rlimg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/itemHomeIV"
+                                    android:layout_width="@dimen/plan_images"
+                                    android:layout_height="@dimen/plan_images"
+                                    android:background="#ffffff"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/icon_pro_plus" />
+
+                                <TextView
+                                    android:id="@+id/planProPlusTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:text="@string/ElenaProPlusName"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <TextView
+                                    android:id="@+id/priceProPlusTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:text="@string/ElenaProPlusPrice"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fillViewport="true">
+
+                            <LinearLayout
+                                android:id="@+id/main"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_2sdp">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/termsTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4sdp"
+                                    android:paddingStart="@dimen/_4sdp"
+                                    android:paddingEnd="@dimen/_4sdp"
+                                    android:text="@string/ElenaAgreeLabel"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.checkbox.MaterialCheckBox
+                                        android:id="@+id/agbCheckBox"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:button="@drawable/check_box_selector" />
+
+                                    <TextView
+                                        android:id="@+id/termsBoxTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="@string/ElenaAGBLabel"
+                                        android:textColor="@color/PrimaryOrange"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.checkbox.MaterialCheckBox
+                                        android:id="@+id/privacyCheckBox"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:button="@drawable/check_box_selector" />
+
+                                    <TextView
+                                        android:id="@+id/privacyBoxTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="@string/ElenaPrivacyLabel"
+                                        android:textColor="@color/PrimaryOrange"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.checkbox.MaterialCheckBox
+                                        android:id="@+id/ageCheckBox"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:button="@drawable/check_box_selector" />
+
+                                    <TextView
+                                        android:id="@+id/ageTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="@string/Elena18Label"
+                                        android:textColor="@color/PrimaryOrange"
+                                        android:textSize="@dimen/_10ssp" />
+
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/registerBtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_24sdp"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:background="@drawable/button_bg_drawable"
+                                    android:text="@string/ElenaRegisterLabel"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11ssp" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/forgotPwButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/ElenaForgotPassword"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/PrimaryOrange"
+                                    android:textSize="@dimen/_11ssp" />
+
+
+                            </LinearLayout>
+
+
+                        </androidx.core.widget.NestedScrollView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
