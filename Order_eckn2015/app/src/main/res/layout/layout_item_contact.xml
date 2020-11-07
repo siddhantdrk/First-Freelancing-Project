@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/items_set_contacts_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_footer_margin"
+        android:background="@color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_footer_margin">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/items_set_contacts_img"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/layout_footer_margin"
+                android:background="#ffffff"
+                android:src="@drawable/woman_holding" />
+
+            <TextView
+                android:id="@+id/set_con_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/items_set_contacts_img"
+                android:gravity="center"
+                android:text="@string/ElenaNotSetLabel"
+                android:textColor="#584C4C"
+                android:textSize="@dimen/footer_icon_txt_size" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setNumberButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/save_byn_height"
+                android:layout_below="@+id/set_con_txt"
+                android:layout_marginTop="@dimen/layout_footer_margin"
+                android:layout_marginBottom="@dimen/layout_footer_margin"
+                android:backgroundTint="@color/PrimaryOrange"
+                android:text="@string/ElenaSetNumberLabel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/contact_item_btn_txt_size"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/save_byn_height"
+                android:layout_below="@+id/setNumberButton"
+                android:backgroundTint="@color/PrimaryOrange"
+                android:text="@string/ElenaSetImageLabel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/contact_item_btn_txt_size"
+                app:cornerRadius="8dp" />
+
+            <ImageView
+                android:id="@+id/items_set_contatcs_autoresponse"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/autorespond" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

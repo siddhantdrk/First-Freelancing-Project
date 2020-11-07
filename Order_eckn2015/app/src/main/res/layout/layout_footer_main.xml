@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_footer_margin"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/layout_footer_margin"
+        android:layout_marginBottom="@dimen/layout_footer_margin"
+        android:clipChildren="true"
+        android:clipToPadding="false"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/linear_layout_margin_top"
+            android:layout_marginBottom="8dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:id="@+id/llMinus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/s_btn_minus"
+                    android:layout_width="@dimen/footer_icon_dimension"
+                    android:layout_height="@dimen/footer_icon_dimension"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/ic_minus" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ElenaVolumeLabel"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/footer_icon_txt_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPlus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/s_btn_plus"
+                    android:layout_width="@dimen/footer_icon_dimension"
+                    android:layout_height="@dimen/footer_icon_dimension"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/ic_plus" />
+
+                <SeekBar
+                    android:id="@+id/volumeBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/PrimaryOrange"
+                    android:max="15"
+                    android:progressTint="@color/PrimaryOrange"
+                    android:thumbTint="@color/PrimaryOrange" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/goSettings"
+                    android:layout_width="@dimen/footer_icon_dimension"
+                    android:layout_height="@dimen/footer_icon_dimension"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/ic_settings" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/settingsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/ElenaSettingsLabel"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/footer_icon_txt_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTeamViewer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/goTeamViewer"
+                    android:layout_width="@dimen/footer_icon_dimension"
+                    android:layout_height="@dimen/footer_icon_dimension"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/ic_tv" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/supportTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ElenaSupportLabel"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/footer_icon_txt_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
+        android:layout_width="@dimen/save_byn_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/PrimaryOrange"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/ElenaSaveLabel"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/save_button_text_size"
+        app:cornerRadius="8dp" />
+
+
+</RelativeLayout>
