@@ -200,5 +200,6 @@
     <string name="userNumberHint">Telephone number</string>
     <string name="devicesActivatedLabel">Active devices: %activated% of %max%</string>
     <string name="wrongCodeError">Invalid code</string>
+    <string name="incoming_video_call">Incoming Video Call</string>
 
 </resources>

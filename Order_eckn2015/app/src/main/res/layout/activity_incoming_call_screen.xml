@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/layout_header_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/calling_user_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/woman_holding_final" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/incoming_video_call_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/incoming_call"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/calling_user_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/incoming_video_call_txt"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Tablet Vodafone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/calling_user_info_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calling_user_name_txt"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="sip:+491745637215@3.120.198.4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calling_user_info_txt"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/accept_call_img_btn"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
+                android:layout_marginEnd="@dimen/_42sdp"
+                android:src="@drawable/accept_call" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/reject_call_img_btn"
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_52sdp"
+                android:layout_marginStart="@dimen/_42sdp"
+                android:src="@drawable/reject_call" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
