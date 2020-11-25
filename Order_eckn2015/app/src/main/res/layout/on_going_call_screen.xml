@@ -25,7 +25,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            android:src="@drawable/woman_holding_final" />
+            android:src="@drawable/final_woman_holding" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ongoing_call_gradient_background" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/your_camera_view"
@@ -117,7 +122,7 @@
                 android:layout_marginStart="@dimen/_32sdp"
                 android:layout_marginTop="@dimen/_16sdp"
                 android:layout_marginBottom="@dimen/_16sdp"
-                android:src="@drawable/camera_off" />
+                android:src="@drawable/video_enabled" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/camera_off_on_btn"
@@ -127,7 +132,7 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:layout_marginEnd="@dimen/_32sdp"
                 android:layout_marginBottom="@dimen/_16sdp"
-                android:src="@drawable/microphone" />
+                android:src="@drawable/mic_enabled" />
         </RelativeLayout>
 
 

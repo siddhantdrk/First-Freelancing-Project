@@ -25,7 +25,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            android:src="@drawable/woman_holding_final" />
+            android:src="@drawable/final_woman_holding" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ongoing_call_gradient_background" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/incoming_video_call_txt"
