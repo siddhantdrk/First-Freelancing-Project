@@ -1,2 +1,2 @@
-# First-Freelancing-Project
-Its my very first project on Android front-end while I stepped into freelancing and delivered it successfully.
+# Freelancing-Project
+The repository contains my all work that I am doing in collaboration with the StartUp ELENA-APP , Proximo-WSD-UG , Germany.
