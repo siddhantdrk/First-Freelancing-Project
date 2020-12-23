@@ -42,4 +42,8 @@
 
     <!--    saveButton-->
     <dimen name="save_button_text_size">@dimen/_12ssp</dimen>
+    <!--    profile_screen-->
+    <dimen name="max_contact_items_text_size">12sp</dimen>
+    <dimen name="min_contact_item_text_size">12sp</dimen>
+    <dimen name="contact_item_margin">4dp</dimen>
 </resources>

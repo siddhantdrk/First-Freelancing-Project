@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/contact_item_margin">
+
+    <TextView
+        android:id="@+id/cardinal_num"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="wrap_content"
+        android:text="10."
+        android:textColor="#ff4300"
+        android:textSize="@dimen/max_contact_items_text_size" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/cardinal_num"
+        android:maxLines="2"
+        android:text="Siddhant"
+        android:textColor="@color/black"
+        android:textSize="@dimen/max_contact_items_text_size" />
+
+    <TextView
+        android:id="@+id/contact_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_name"
+        android:layout_toEndOf="@id/cardinal_num"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:text="88506526231234567890"
+        android:textColor="@color/black"
+        android:textSize="@dimen/max_contact_items_text_size" />
+</RelativeLayout>

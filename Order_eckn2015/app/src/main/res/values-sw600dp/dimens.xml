@@ -35,4 +35,8 @@
     <dimen name="icon_dimension">@dimen/_14sdp</dimen>
     <dimen name="heading_text">@dimen/_10ssp</dimen>
     <dimen name="long_text_size">@dimen/_9ssp</dimen>
+    <!--    profile_screen-->
+    <dimen name="max_contact_items_text_size">@dimen/_9ssp</dimen>
+    <dimen name="min_contact_item_text_size">@dimen/_8ssp</dimen>
+    <dimen name="contact_item_margin">4dp</dimen>
 </resources>
